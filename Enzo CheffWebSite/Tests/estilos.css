@@ -1,0 +1,719 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0px;
+  height: 100%;
+}
+
+button:focus-visible {
+  outline: 2px solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 5px !important;
+}
+a {
+  text-decoration: none;
+}
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:400");
+
+.portafolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-color: rgba(255, 255, 255, 1);
+  background: linear-gradient(
+    180deg,
+    rgb(1, 2, 8) 16.39%,
+    rgb(1, 2, 6) 20.51%,
+    rgb(4, 0, 8) 24.79%,
+    rgb(1, 1, 1) 30.46%,
+    rgb(1, 1, 1) 34.11%,
+    rgb(1, 1, 1) 36.21%,
+    rgb(1, 1, 1) 100%
+  );
+}
+
+.portafolio .inicio {
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  height: 800px;
+}
+
+.portafolio .header {
+  position: absolute;
+  width: 1440px;
+  height: 96px;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+}
+
+
+
+.portafolio .nav-items {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 32px;
+  padding: 10px 0px;
+  position: absolute;
+  top: 23px;
+  left: 1129px;
+}
+
+.portafolio .list-item-defecto {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.portafolio .label {
+  background: linear-gradient(180deg, rgb(188, 60, 216) 0%, rgb(197, 75, 140) 100%);
+  -webkit-background-clip: text !important;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: var(--label-semibold-font-family);
+  font-weight: var(--label-semibold-font-weight);
+  font-size: var(--label-semibold-font-size);
+  letter-spacing: var(--label-semibold-letter-spacing);
+  line-height: var(--label-semibold-line-height);
+  white-space: nowrap;
+  font-style: var(--label-semibold-font-style);
+}
+
+
+
+.portafolio .texto-decorado {
+  color: var(--neutral-1);
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: var(--label-semibold-font-family);
+  font-weight: var(--label-semibold-font-weight);
+  font-size: var(--label-semibold-font-size);
+  letter-spacing: var(--label-semibold-letter-spacing);
+  line-height: var(--label-semibold-line-height);
+  white-space: nowrap;
+  font-style: var(--label-semibold-font-style);
+}
+
+.portafolio .contenido {
+  display: flex;
+  width: 1216px;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 0px 104px;
+  position: absolute;
+  top: 316px;
+  left: 112px;
+}
+
+.portafolio .div {
+  position: relative;
+  flex: 1;
+  margin-top: -1px;
+  font-family: "Work Sans", Helvetica;
+  font-weight: 400;
+  color: transparent;
+  font-size: 56px;
+  text-align: center;
+  letter-spacing: -1.12px;
+  line-height: 84px;
+}
+
+.portafolio .span {
+  font-weight: var(--heading-1-light-font-weight);
+  color: #e3e4e68c;
+  font-family: var(--heading-1-light-font-family);
+  font-style: var(--heading-1-light-font-style);
+  letter-spacing: var(--heading-1-light-letter-spacing);
+  line-height: var(--heading-1-light-line-height);
+  font-size: var(--heading-1-light-font-size);
+}
+
+.portafolio .texto-decorado-2 {
+  font-weight: var(--heading-1-semibold-font-weight);
+  color: #e3e4e6;
+  font-family: var(--heading-1-semibold-font-family);
+  font-style: var(--heading-1-semibold-font-style);
+  letter-spacing: var(--heading-1-semibold-letter-spacing);
+  line-height: var(--heading-1-semibold-line-height);
+  font-size: var(--heading-1-semibold-font-size);
+}
+
+.portafolio .texto-decorado-3 {
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.portafolio .texto-decorado-4 {
+  font-weight: var(--heading-1-light-font-weight);
+  color: #ffffff;
+  font-family: var(--heading-1-light-font-family);
+  font-style: var(--heading-1-light-font-style);
+  letter-spacing: var(--heading-1-light-letter-spacing);
+  line-height: var(--heading-1-light-line-height);
+  font-size: var(--heading-1-light-font-size);
+}
+
+.portafolio .foto-perfil {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  top: 718px;
+  left: 700px;
+}
+
+.portafolio .platos {
+  gap: 8px;
+  padding: 80px 112px 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.portafolio .platos-2 {
+  gap: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.portafolio .titulo {
+  gap: 10px;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.portafolio .p {
+  position: relative;
+  flex: 1;
+  margin-top: -1px;
+  font-family: "Work Sans", Helvetica;
+  font-weight: 400;
+  color: transparent;
+  font-size: 40px;
+  letter-spacing: 0;
+  line-height: 60px;
+}
+
+.portafolio .texto-decorado-5 {
+  font-weight: var(--heading-2-light-font-weight);
+  color: #e3e4e68c;
+  font-family: var(--heading-2-light-font-family);
+  font-style: var(--heading-2-light-font-style);
+  letter-spacing: var(--heading-2-light-letter-spacing);
+  line-height: var(--heading-2-light-line-height);
+  font-size: var(--heading-2-light-font-size);
+}
+
+.portafolio .texto-decorado-6 {
+  font-weight: var(--heading-2-light-font-weight);
+  color: #ffffff;
+  font-family: var(--heading-2-light-font-family);
+  font-style: var(--heading-2-light-font-style);
+  letter-spacing: var(--heading-2-light-letter-spacing);
+  line-height: var(--heading-2-light-line-height);
+  font-size: var(--heading-2-light-font-size);
+}
+
+.portafolio .texto-decorado-7 {
+  font-weight: var(--heading-2-semibold-font-weight);
+  color: #e3e4e6;
+  font-family: var(--heading-2-semibold-font-family);
+  font-style: var(--heading-2-semibold-font-style);
+  letter-spacing: var(--heading-2-semibold-letter-spacing);
+  line-height: var(--heading-2-semibold-line-height);
+  font-size: var(--heading-2-semibold-font-size);
+}
+
+.portafolio .logos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.portafolio .paella-img {
+  position: relative;
+  width: 300px;
+  height: 400px;
+}
+
+.portafolio .cebiche-img {
+  position: relative;
+  width: 300px;
+  height: 400px;
+}
+
+.portafolio .fabada-img {
+  position: relative;
+  width: 300px;
+  height: 400px;
+}
+
+.portafolio .jambonette-img {
+  position: relative;
+  width: 300px;
+  height: 400px;
+}
+
+.portafolio .trabajos {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 97px;
+  padding: 80px 110px 120px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.portafolio .carta {
+  display: flex;
+ 
+  align-items: flex-start;
+  gap: 32px;
+  position: relative;
+  align-self: stretch;
+  height: 490px;
+  width: 800px;
+}
+
+.portafolio .fotos-carta {
+  position: relative;
+  flex: 1;
+  align-self: stretch;
+  flex-grow: 1;
+  
+}
+
+.portafolio .columna-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  gap: 32px;
+  position: relative;
+  flex: 1;
+  align-self: stretch;
+  flex-grow: 1;
+  
+}
+
+.portafolio .contenido-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  gap: 24px;
+  position: relative;
+  flex: 1;
+  align-self: stretch;
+  width: 100%;
+  flex-grow: 1;
+}
+
+.portafolio .title-descripcion {
+  flex-direction: column;
+  gap: 16px;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.portafolio .titulo-plato {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1px;
+  font-family: var(--heading-5-semibold-font-family);
+  font-weight: var(--heading-5-semibold-font-weight);
+  color: var(--neutral-1);
+  font-size: var(--heading-5-semibold-font-size);
+  letter-spacing: var(--heading-5-semibold-letter-spacing);
+  line-height: var(--heading-5-semibold-line-height);
+  font-style: var(--heading-5-semibold-font-style);
+}
+
+.portafolio .descripcion {
+  align-self: stretch;
+  font-weight: 400;
+  color: transparent;
+  font-size: 32px;
+  line-height: 48px;
+  position: relative;
+  font-family: "Work Sans", Helvetica;
+  letter-spacing: 0;
+}
+
+.portafolio .texto-decorado-8 {
+  font-weight: var(--heading-3-light-font-weight);
+  color: #e3e4e68c;
+  font-family: var(--heading-3-light-font-family);
+  font-style: var(--heading-3-light-font-style);
+  letter-spacing: var(--heading-3-light-letter-spacing);
+  line-height: var(--heading-3-light-line-height);
+  font-size: var(--heading-3-light-font-size);
+}
+
+.portafolio .texto-decorado-9 {
+  font-weight: var(--heading-3-light-font-weight);
+  color: #e3e4e6;
+  font-family: var(--heading-3-light-font-family);
+  font-style: var(--heading-3-light-font-style);
+  letter-spacing: var(--heading-3-light-letter-spacing);
+  line-height: var(--heading-3-light-line-height);
+  font-size: var(--heading-3-light-font-size);
+}
+
+.portafolio .texto-decorado-10 {
+  font-weight: var(--heading-3-semibold-font-weight);
+  color: #e3e4e6;
+  font-family: var(--heading-3-semibold-font-family);
+  font-style: var(--heading-3-semibold-font-style);
+  letter-spacing: var(--heading-3-semibold-letter-spacing);
+  line-height: var(--heading-3-semibold-line-height);
+  font-size: var(--heading-3-semibold-font-size);
+}
+
+
+
+
+
+.portafolio .text {
+  font-weight: var(--button-regular-font-weight);
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: var(--button-regular-font-family);
+  color: var(--neutral-1);
+  font-size: var(--button-regular-font-size);
+  letter-spacing: var(--button-regular-letter-spacing);
+  line-height: var(--button-regular-line-height);
+  white-space: nowrap;
+  font-style: var(--button-regular-font-style);
+}
+
+.portafolio .icon {
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+
+.portafolio .texto-decorado-11 {
+  font-weight: var(--heading-3-light-font-weight);
+  color: #ffffff;
+  font-family: var(--heading-3-light-font-family);
+  font-style: var(--heading-3-light-font-style);
+  letter-spacing: var(--heading-3-light-letter-spacing);
+  line-height: var(--heading-3-light-line-height);
+  font-size: var(--heading-3-light-font-size);
+}
+
+.portafolio .button-2 {
+  padding: 8px 28px;
+  border-color: var(--neutral-1);
+  background: linear-gradient(180deg, rgb(188, 60, 216) 0%, rgb(197, 75, 140) 100%);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  position: relative;
+  flex: 0 0 auto;
+  border-radius: 100px;
+  border: 1px solid;
+  all: unset;
+  box-sizing: border-box;
+}
+
+.portafolio .text-2 {
+  font-weight: var(--button-semibold-font-weight);
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: var(--button-semibold-font-family);
+  color: var(--neutral-1);
+  font-size: var(--button-semibold-font-size);
+  letter-spacing: var(--button-semibold-letter-spacing);
+  line-height: var(--button-semibold-line-height);
+  white-space: nowrap;
+  font-style: var(--button-semibold-font-style);
+}
+
+.portafolio .about-me {
+  display: flex;
+  flex-direction: column;
+  height: 996px;
+  align-items: center;
+  gap: 8px;
+  padding: 74px 107px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+}
+
+.portafolio .wrapper {
+  justify-content: center;
+  gap: 34px;
+  flex: 1;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+}
+
+.portafolio .title-descripcion-2 {
+  align-items: flex-start;
+  gap: 16px;
+  flex: 1;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.portafolio .project-title-2 {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1px;
+  font-family: var(--heading-4-semibold-font-family);
+  font-weight: var(--heading-4-semibold-font-weight);
+  color: var(--neutral-1);
+  font-size: var(--heading-4-semibold-font-size);
+  letter-spacing: var(--heading-4-semibold-letter-spacing);
+  line-height: var(--heading-4-semibold-line-height);
+  font-style: var(--heading-4-semibold-font-style);
+}
+
+.portafolio .texto-decorado-12 {
+  font-weight: var(--heading-3-semibold-font-weight);
+  color: #ffffff;
+  font-family: var(--heading-3-semibold-font-family);
+  font-style: var(--heading-3-semibold-font-style);
+  letter-spacing: var(--heading-3-semibold-letter-spacing);
+  line-height: var(--heading-3-semibold-line-height);
+  font-size: var(--heading-3-semibold-font-size);
+}
+
+.portafolio .horizontal {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 32px;
+  position: relative;
+  flex: 1;
+  align-self: stretch;
+  flex-grow: 1;
+}
+
+.portafolio .cover {
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+  height: 408px;
+}
+
+.portafolio .vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 32px;
+  position: relative;
+  flex: 1;
+  align-self: stretch;
+  flex-grow: 1;
+}
+
+.portafolio .img {
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  height: 374px;
+}
+
+.portafolio .cover-2 {
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  height: 375px;
+}
+
+.portafolio .footer {
+  flex-direction: column;
+  height: 460px;
+  align-items: center;
+  padding: 80px 424px 40px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+}
+
+.portafolio .wrapper-2 {
+  flex-direction: column;
+  gap: 80px;
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+}
+
+.portafolio .content-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.portafolio .title-descripcion-3 {
+  align-items: center;
+  gap: 4px;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.portafolio .get-in-touch-wrapper {
+  justify-content: center;
+  gap: 10px;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.portafolio .descripcion-2 {
+  align-self: stretch;
+  font-weight: var(--body-1-light-font-weight);
+  color: var(--neutral-1);
+  font-size: var(--body-1-light-font-size);
+  text-align: center;
+  line-height: var(--body-1-light-line-height);
+  position: relative;
+  font-family: var(--body-1-light-font-family);
+  letter-spacing: var(--body-1-light-letter-spacing);
+  font-style: var(--body-1-light-font-style);
+}
+
+.portafolio .social-media {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 56px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.portafolio .img-2 {
+  position: relative;
+  width: 48px;
+  height: 48px;
+}
+
+.portafolio .descripcion-wrapper {
+  align-items: flex-start;
+  padding: 4px 0px;
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+}
+
+.portafolio .descripcion-3 {
+  flex: 1;
+  margin-top: -1px;
+  font-weight: 400;
+  color: transparent;
+  font-size: 18px;
+  text-align: center;
+  line-height: 27px;
+  position: relative;
+  font-family: "Work Sans", Helvetica;
+  letter-spacing: 0;
+}
+
+.portafolio .texto-decorado-13 {
+  font-weight: var(--body-1-light-font-weight);
+  color: #e3e4e68c;
+  font-family: var(--body-1-light-font-family);
+  font-style: var(--body-1-light-font-style);
+  letter-spacing: var(--body-1-light-letter-spacing);
+  line-height: var(--body-1-light-line-height);
+  font-size: var(--body-1-light-font-size);
+}
+
+.portafolio .texto-decorado-14 {
+  font-weight: 300;
+  color: #e3e4e6;
+}
+
+.portafolio .texto-decorado-15 {
+  font-weight: var(--body-1-light-font-weight);
+  color: #e3e4e6;
+  font-family: var(--body-1-light-font-family);
+  font-style: var(--body-1-light-font-style);
+  letter-spacing: var(--body-1-light-letter-spacing);
+  line-height: var(--body-1-light-line-height);
+  font-size: var(--body-1-light-font-size);
+}
+
+.portafolio .texto-decorado-16 {
+  font-weight: var(--body-1-semibold-font-weight);
+  color: #e3e4e6;
+  font-family: var(--body-1-semibold-font-family);
+  font-style: var(--body-1-semibold-font-style);
+  letter-spacing: var(--body-1-semibold-letter-spacing);
+  line-height: var(--body-1-semibold-line-height);
+  font-size: var(--body-1-semibold-font-size);
+}

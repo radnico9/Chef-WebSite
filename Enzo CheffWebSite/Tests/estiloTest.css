@@ -1,0 +1,171 @@
+body {
+  font-family: Comfortaa;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: #e2e2e2;
+  color: #1c0f13;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.h1M
+{
+  padding-left: 20%;
+  font-size: 50px;
+}
+
+.h2M
+{
+  text-align: center;
+  
+}
+
+
+
+.encabezado-chef {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: #6E7E85;
+}
+
+.encabezado {
+  background-color: #1c0f13;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  color: #e2e2e2;
+  align-items: center;
+}
+
+
+.foto-chef {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.descripcion-chef {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Posiciona la imagen de contenerdor, para posicionar flechas izq y der */
+
+
+.contenedor {
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 100px;
+}
+
+/* Esconde imagenes por defecto*/
+.miSlide {
+  display: none;
+  width: 75%;
+  height: 75%;
+  object-fit: cover;
+  padding-left: 33%;
+}
+
+.seccionGaleria {
+  padding-left: 8.5%;
+  width: 85%;
+  height: 85%;
+}
+
+.imgPrincipal {
+  height: 80%;
+  width: 80%;
+  border-style: solid;
+  border-color: #1C0F13;
+}
+
+/*  añade un puntero cuando pasas el mause por las imagenes */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous botones */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: #BBBAC6;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/*  posicion del boton next a la derecha*/
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, añade color negro*/
+.prev:hover,
+.next:hover {
+  background-color: #1C0F13;
+}
+
+/* numeros  text (1/3 etc) */
+.textoNumero {
+  color: #E2E2E2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* contenedor para imagen de texto*/
+.caption-contenedor {
+  text-align: center;
+  background-color: #1C0F13;
+  padding: 2px 16px;
+  color: white;
+  border-style: solid;
+  border-color: #1C0F13;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* 6 columnas de lado a lado  */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* añade efecto de transparencia a las columnas*/
+.demo {
+  opacity: 0.6;
+  width: 100%;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+.sobre-mi{
+  padding-left: 8.5%;
+  width: 85%;
+  height: 85%;
+
+}
